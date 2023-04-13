@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header/>
     <primeiroComponente />
     <p> This is {{ test }}</p>
 
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+import Header from './components/Header.vue'
 import primeiroComponente from "./components/primeiroComponente.vue";
 import LifeCycle from './components/LifeCycle.vue';
 import Pessoa from './components/Pessoa.vue';
@@ -18,6 +20,7 @@ import Pessoa from './components/Pessoa.vue';
 export default {
   name: "App",
   components: {
+    Header,
     primeiroComponente,
     LifeCycle,
     Pessoa
@@ -29,3 +32,13 @@ export default {
   },
 };
 </script>
+<!-- globla css -- maniula o css de forma global  -->
+<style>
+  body{
+    background-color: #333;
+    color:#fff;
+  } 
+  a{
+    color: #fff;
+  }
+</style>

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Hello world !!</h1>
     <primeiroComponente />
     <p> This is {{ test }}</p>
   </div>
@@ -13,11 +12,11 @@ export default {
   name: "App",
   components: {
     primeiroComponente,
-    data() {
-      return {
-        test: 'Only test'
-      }
-    },
+  },
+  data() {
+    return {
+      test: 'Only test',
+    }
   },
 };
 </script>

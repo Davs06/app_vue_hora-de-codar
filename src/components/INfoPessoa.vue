@@ -3,12 +3,20 @@
     <p v-if="in_job">Estou trabalhando no momento.</p>
     <p v-else>Estou me busca de novas oportunidades</p>
 
-    <p>Ultilizo as seguintes tecnologias:</p>
+    <p>Ultilizo as seguintes tecnologias para Back-End:</p>
 
     <ul>
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>PHP</li>
+      <li v-for="(technology, index) in technologiesFront" :key="index">
+        {{ technology }}
+      </li>
+    </ul>
+
+    <p>Ultilizo as seguinter tecnologias para Front-End</p>
+
+    <ul>
+      <li v-for="technology in technologiesBack" :key="technology.id">
+        {{ technology.language }}
+      </li>
     </ul>
 
     <div>
@@ -47,6 +55,13 @@ export default {
       meu_portifolio: "https://portifolio-davs.netlify.app",
       meu_github: "https://github.com/Davs06",
       txt_btn: "Mostrar email",
+      technologiesFront: ["Java", "PHP", "Node"],
+      technologiesBack: [
+        { id: 1, language: "HTML" },
+        { id: 2, language: "CSS" },
+        { id: 3, language: "JavaScript" },
+        { id: 4, language: "Vue3" },
+      ],
     };
   },
   methods: {

@@ -1,21 +1,35 @@
 <template>
   <div>
-    <Header/>
+    Component
+    -------------------------------------------------------------------
+
+    <Header />
+
+    Component
+    -------------------------------------------------------------------
+
     <primeiroComponente />
-    <p> This is {{ test }}</p>
+    not Component
+    -------------------------------------------------------------------
 
-    <LifeCycle/>
+    <p>This is {{ test }}</p>
 
-    <Pessoa/>
+    Component
+    -------------------------------------------------------------------
+
+    <LifeCycle />
+
+    Component
+    ------------------------------------------------------------------- 
+    <Pessoa />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from "./components/Header.vue";
 import primeiroComponente from "./components/primeiroComponente.vue";
-import LifeCycle from './components/LifeCycle.vue';
-import Pessoa from './components/Pessoa.vue';
-
+import LifeCycle from "./components/LifeCycle.vue";
+import Pessoa from "./components/Pessoa.vue";
 
 export default {
   name: "App",
@@ -23,22 +37,22 @@ export default {
     Header,
     primeiroComponente,
     LifeCycle,
-    Pessoa
+    Pessoa,
   },
   data() {
     return {
-      test: 'Only test',
-    }
+      test: "Only test",
+    };
   },
 };
 </script>
 <!-- globla css -- maniula o css de forma global  -->
 <style>
-  body{
-    background-color: #333;
-    color:#fff;
-  } 
-  a{
-    color: #fff;
-  }
+body {
+  background-color: #333;
+  color: #fff;
+}
+a {
+  color: #fff;
+}
 </style>

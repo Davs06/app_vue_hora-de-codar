@@ -1,15 +1,23 @@
 <template>
-  <h1> Hello world !!</h1>
-  <primeiroComponente/>
+  <div>
+    <h1>Hello world !!</h1>
+    <primeiroComponente />
+    <p> This is {{ test }}</p>
+  </div>
 </template>
 
 <script>
-import primeiroComponente from './components/primeiroComponente.vue';
+import primeiroComponente from "./components/primeiroComponente.vue";
 
 export default {
-  name:'App',
+  name: "App",
   components: {
-    primeiroComponente
-  }
-}
+    primeiroComponente,
+    data() {
+      return {
+        test: 'Only test'
+      }
+    },
+  },
+};
 </script>

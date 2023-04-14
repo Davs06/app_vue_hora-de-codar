@@ -3,17 +3,17 @@
     <img :src="avatar" :alt="alt" />
     <!-- usando v-bind de forma resumida = : scr/herf ....-->
 
-    <Reutilizacao/>
+    <Reutilizacao />
   </div>
 </template>
   
   <script>
-import Reutilizacao from './Reutilizacao.vue';
+import Reutilizacao from "./Reutilizacao.vue";
 
 export default {
   name: "Picture",
-  components:{
-    Reutilizacao
+  components: {
+    Reutilizacao,
   },
   data() {
     return {

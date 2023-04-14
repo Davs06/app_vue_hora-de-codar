@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Picture />
     <p v-if="in_job">Estou trabalhando no momento.</p>
     <p v-else>Estou me busca de novas oportunidades</p>
 
@@ -35,7 +36,6 @@
     </p>
     <!-- Usar v-bind para links de outras pag-->
 
-    <Picture />
   </div>
 </template>
 

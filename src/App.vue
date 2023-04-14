@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <Pessoa />
 
     <primeiroComponente />
 
@@ -8,7 +9,6 @@
 
     <LifeCycle />
 
-    <Pessoa />
   </div>
 </template>
 
